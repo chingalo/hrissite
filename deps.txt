@@ -1,0 +1,14 @@
+requierement:
+================
+
+Python
+django
+South
+PIL
+django-classy-tags
+django-mptt
+django-sekizai
+django-i18nurls
+html5lib
+
+==================
