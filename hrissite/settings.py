@@ -54,6 +54,7 @@ INSTALLED_APPS = (
     'cms.plugins.video',
     'cms.plugins.twitter',
     'cms_redirects',
+    'easy_thumbnails',
     
     
 )
