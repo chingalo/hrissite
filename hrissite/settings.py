@@ -53,6 +53,7 @@ INSTALLED_APPS = (
     'cms.plugins.text',
     'cms.plugins.video',
     'cms.plugins.twitter',
+    'cms_redirects',
     
     
 )
@@ -64,6 +65,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'cms_redirects.middleware.RedirectFallbackMiddleware',
     'django.middleware.locale.LocaleMiddleware',
     'django.middleware.doc.XViewMiddleware',   
     'cms.middleware.page.CurrentPageMiddleware',
@@ -81,6 +83,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'cms.context_processors.media',
     'sekizai.context_processors.sekizai',
 )    
+
 
 
 
@@ -131,8 +134,9 @@ LANGUAGES = [
 ]
 
 CMS_TEMPLATES = (
-    ('template_1.html', 'Template One'),
+    ('template_1.html', gettext('Template One')),
     ('template_2.html', 'Template Two'),
+   
 )
 #SITE_ID:
 CMS_LANGUAGES = {
@@ -174,6 +178,9 @@ CMS_LANGUAGES = {
 }
 
 SITE_ID=1
+
+#enable CMS_SOFTROOT
+CMS_SOFTROOT = True
 
 MEDIA_ROOT = os.path.join(PROJECT_PATH, "media")
 MEDIA_URL = "/media/"
