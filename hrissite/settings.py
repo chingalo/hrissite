@@ -134,6 +134,46 @@ CMS_TEMPLATES = (
     ('template_1.html', 'Template One'),
     ('template_2.html', 'Template Two'),
 )
+#SITE_ID:
+CMS_LANGUAGES = {
+    1: [
+        {
+            'code': 'en',
+            'name': gettext('English'),
+            'fallbacks': ['de', 'fr'],
+            'public': True,
+            'hide_untranslated': True,
+            'redirect_on_fallback':False,
+        },
+        {
+            'code': 'de',
+            'name': gettext('Deutsch'),
+            'fallbacks': ['en', 'fr'],
+            'public': True,
+        },
+        {
+            'code': 'fr',
+            'name': gettext('French'),
+            'public': False,
+        },
+    ],
+    2: [
+        {
+            'code': 'nl',
+            'name': gettext('Dutch'),
+            'public': True,
+            'fallbacks': ['en'],
+        },
+    ],
+    'default': {
+        'fallbacks': ['en', 'de', 'fr'],
+        'redirect_on_fallback':True,
+        'public': False,
+        'hide_untranslated': False,
+    }
+}
+
+SITE_ID=1
 
 MEDIA_ROOT = os.path.join(PROJECT_PATH, "media")
 MEDIA_URL = "/media/"
