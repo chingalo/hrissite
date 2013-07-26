@@ -55,7 +55,8 @@ INSTALLED_APPS = (
     'cms.plugins.twitter',
     'cms_redirects',
     'easy_thumbnails',
-    
+    'cms.plugins.inherit',
+   
     
 )
 
