@@ -1,15 +1,37 @@
-{% load cms_tags sekizai_tags %}
-{% load menu_tags %}
-<html>
-  <head>
-	  
-      {% render_block "css" %}
-  </head>
-  <body>
-	
-      {% cms_toolbar %}
-      {% placeholder base_content  %}
-      {% block base_content %}{% endblock %}
-      {% render_block "js" %}
-  </body>
-</html>
+
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<title>{% block title %}{% endblock %}</title>
+		{% block style %}
+		
+		{% endblock %}
+			
+	</head>
+	<body >	
+	<div id= 'main_body'>	
+			<header>
+			{% block page_header %}{% endblock %}
+			</header>		
+			
+				<nav>
+					<ul>
+					{% block nav_bar %}{% endblock %} 
+					</ul>
+				</nav>
+				<div id = 'mini_body'>
+					<section id = 'main_contents'>
+							{% block contents %}{% endblock %}					
+														
+					</section>
+					<aside id = 'aside_bar'>
+						{% block side_news %}{% endblock %}				
+					</aside>
+				</div>
+				{% block contents_others %}{% endblock %}
+				<footer id =' footer'>				
+					{% block footer%}  {% endblock %}
+				</footer>
+	 </div>	
+	</body>	
+</html>	
