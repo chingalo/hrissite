@@ -55,7 +55,6 @@ database configurations should look something similar to this:
 	EMAIL_USE_TLS = True
 	EMAIL_SENDER = 'companyname@gmail.com'
 	EMAIL_SSL = True
-
 Initial dummy database settings are stored under data branch.
 After configuration run the server. Incase of any difficulties
 in configuration refer to [Django CMS Documentation](http://django-cms.readthedocs.org/en/2.2/getting_started/installation.html)

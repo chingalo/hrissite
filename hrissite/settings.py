@@ -140,6 +140,8 @@ LANGUAGES = [
 CMS_TEMPLATES = (
     ('template_1.html', gettext('Template One')),
     ('template_2.html', 'Template Two'),
+    ('home_page.html', gettext('home page temp')),
+  
    
 )
 #SITE_ID:

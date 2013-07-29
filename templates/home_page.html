@@ -1,0 +1,122 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+{% block style %}
+<style>
+*{
+margin: 0px;
+padding:0px;
+}
+header,nav, footer, arcticle, footer, section{
+display: block;
+}
+body{
+background:#47637E;
+width:100%;
+display: -webkit-box;
+-webkit-box-pack: center;
+}
+#main_body{
+max-width: 1000px;
+margin: 20px 0px;
+display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-box-flex:1;
+}
+header{
+font: 19px bold Tahoma;
+border: 2 px solid black;
+
+}
+.menu{
+border: #1E90FF;
+background:#1E90FF;
+}
+.menu li{
+display: inline-block;
+list-style: none;
+font: bold 18px Tahoma;
+padding: 5px;
+}
+#mini_body{ 
+display: -webkit-box;
+-webkit-box-orient:horizontal;
+
+ }
+#main_contents{
+border: 1px solid blue;
+-webkit-box-flex: 1;
+margin:  20px;
+padding: 20px;
+}
+
+#aside_bar{
+border: 1px solid blue;
+width: 220px;
+margin: 20px 0px;
+padding: 5px;
+}	
+.arcticles{	
+	display: -webkit-box;
+    -webkit-box-orient:horizontal;
+    
+}
+.tabs{
+
+}
+.tabs li{
+padding: 10px;	
+display: inline-block;
+font: bold 18px Tahoma;	
+}
+.other_articles{
+border: 3px solid blue;
+}
+</style>
+{% endblock %}	
+
+
+{% block page_header %}	
+<div class ='top'>
+{% with 320 as height %}{% placeholder header_of_page %}{% endwith %}
+
+</div>
+{% endblock %}
+{% block nav_bar %}
+	<div class='menu'>
+		<li><a href="#">tab1</a></li>
+		<li><a href="#">tab2</a></li>
+		<li><a href="#">tab3</a></li>
+		<li><a href="#">tab4</a></li>
+		<li><a href="#">tab5</a></li>
+	</div>		
+{% endblock %}
+
+{% block contents %}
+	<div class='slide_show'>
+		{% placeholder content %}
+	</div>	
+{% endblock %}
+
+ 	{% block side_news %} 
+ 	 <p> <h2>NEWS</h2></p>
+		{% placeholder News %}
+ 	 {% endblock %}	
+{% block contents_others %}
+<div class ='articles'>		
+ 	<div class='tabs'>
+		<ul>
+			<li><a href="#">tab1</a></li>
+			<li><a href="#">tab2</a></li>
+			<li><a href="#">tab3</a></li>
+			<li><a href="#">tab4</a></li>
+			<li><a href="#">tab5</a></li>
+		</ul>		
+ 	</div> 
+ 	<article class='other_articles' >
+		{% placeholder others_articles %}
+ 	</article>	 
+</div> 		
+ 	
+{% endblock %}	
+
+ 	
