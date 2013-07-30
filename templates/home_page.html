@@ -10,7 +10,7 @@ header,nav, footer, arcticle, footer, section{
 display: block;
 }
 body{
-background:#47637E;
+background:;
 width:100%;
 display: -webkit-box;
 -webkit-box-pack: center;
@@ -22,10 +22,11 @@ display: -webkit-box;
 -webkit-box-orient: vertical;
 -webkit-box-flex:1;
 }
-header{
+.top{
 font: 19px bold Tahoma;
 border: 2 px solid black;
-
+padding: 10px;
+background:#BFBFBF;
 }
 .menu{
 border: #1E90FF;
@@ -51,14 +52,14 @@ display: -webkit-box;
 
  }
 #main_contents{
-border: 1px solid blue;
+border:1px solid black ;
 -webkit-box-flex: 1;
 margin:  20px;
 padding: 20px;
 }
 
 #aside_bar{
-border: 1px solid blue;
+border:1px solid black ;
 width: 220px;
 margin: 20px 15px;
 padding: 5px;
@@ -80,7 +81,8 @@ font: bold 18px Tahoma;
 border-right: 1px solid black;
 }
 .other_articles{
-border: 3px solid blue;
+border: 2px solid black;
+padding: 10px;
 }
 
 </style>
@@ -89,7 +91,7 @@ border: 3px solid blue;
 
 {% block page_header %}	
 <div class ='top'>
-{% with 320 as height %}{% placeholder header_of_page %}{% endwith %}
+<h3>{% placeholder header_of_page %}</h3>
 
 </div>
 {% endblock %}
@@ -110,8 +112,8 @@ border: 3px solid blue;
 {% endblock %}
 
  	{% block side_news %} 
- 	 <p> <h2>NEWS</h2></p>
-		{% placeholder News %}
+		<h2>NEWS</h2>
+		<p>{% placeholder News %}</p>
  	 {% endblock %}	
 {% block contents_others %}
 <div class ='articles'>		

@@ -3,35 +3,32 @@
 <html lang='en'>
 	<head>
 		<title>{% block title %}{% endblock %}</title>
-		{% block style %}
-		
-		{% endblock %}
-			
+		{% block style %}		
+		{% endblock %}			
 	</head>
 	<body >	
 	<div id= 'main_body'>	
-			<header>
-			{% block page_header %}{% endblock %}
-			</header>		
-			
+				<header>
+				{% block page_header %}{% endblock %}
+				</header>
 				<nav>
-					<ul>
+					<ul class='menu'>
 					{% block nav_bar %}{% endblock %} 
 					</ul>
 				</nav>
 				<div id = 'mini_body'>
 					<section id = 'main_contents'>
-							{% block contents %}{% endblock %}					
-														
-					</section>
+							{% block contents %}{% endblock %}			
+									</section>
 					<aside id = 'aside_bar'>
 						{% block side_news %}{% endblock %}				
 					</aside>
-				</div>
-				{% block contents_others %}{% endblock %}
+					</div>
+					<div id='others'>
+					 {% block contents_others %}{% endblock %}
+					</div>			
 				<footer id =' footer'>				
 					{% block footer%}  {% endblock %}
 				</footer>
-	 </div>	
 	</body>	
 </html>	
