@@ -17,7 +17,7 @@ display: -webkit-box;
 #main_body{
 max-width: 1100px;
 margin: 15px;
-border: 1px solid;
+border: ;
 display:-webkit-box;
 -webkit-box-orient:vertical;
 -webkit-box-flex:1;	
@@ -27,13 +27,14 @@ padding:10px;
 background:#AD9898;
 display: -webkit-box;
 -webkit-box-orient:horizontal;
+-webkit-box-flex:1;
 }
 .header h3{
 padding-left: 10px;	
 font-style: italic;
 font-family: century schoolbook L;
 font-size: 40px;
-text-align: center;
+text-align: right;
 }
 img{
 padding-left: 10px;
@@ -55,15 +56,72 @@ color: #8E8080;
 }
 li a:hover{
 background:#BFBFBF;
-font-size: 20px;
+font-size: 19px;
 border-radius: 5px;
-padding: 2px;
+padding: 5px;
+}
+#main_body{
+max-width: 1200px;
+margin: 10px 0px;
+display:-webkit-box;
+-webkit-box-orient:vertical;
+}
+#mini_body{
+margin: 10px;
+display: -webkit-box;
+-webkit-box-orient: horizontal;	
+}
+#main_contents{
+border: 2px solid black;
+margin: 5px;
+padding: 5px;
+-webkit-box-flex: 1;
+}
+#aside_bar{
+border: 2px solid black;
+padding: 5px;	
+margin: 5px;	
+width:200px;
+}
+#aside_bar p{
+background:silver;
+border-radius: 2px;
+display:block}
+#others{
+padding-top: 5px;
+padding-left: 17px;
+padding-right: 17px;
+margin 10px;
+display:-webkit-box;
+-webkit-box-orient: vertical;
+}
+.tabs_others_articles{
+background:#4D4D4D;
+}
+.tabs_others_articles li{
+display:inline-block;
+padding-left: 10px;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+#others p{
+border: 2px solid black;
+padding: 5px;
+}
+#footer{
+background: #BFBFBF;
+border-top: 3px solid silver;
+}
+#footer p{
+text-align: center;
+padding: 5px;	
+margin: 15px;	
 }
 </style>
 {% endblock %}
 {% block page_header %}
 	<div class="header">
-		<img width=200px height= 100px src="#">
+		<img width=200px height= 100px src="">
 		<h3>{% placeholder head_of_page %}</h3>
 	</div>
 {% endblock %}
@@ -80,7 +138,7 @@ padding: 2px;
 
 {% block side_news %}
 <h2>NEWS</h2>
-{% placeholder aside_news %}
+<p>{% placeholder aside_news %}</p>
 {% endblock %}
 	
 {% block contents_others %}
@@ -91,7 +149,7 @@ padding: 2px;
 		<li><a href="">TAB4</a></li>
 		<li><a href="">TAB5</a></li>
 	</ul>
-{%placeholder others_articles_at_bottom%}
+<p>{%placeholder others_articles_at_bottom%}</p>
 {% endblock %}
 
 {% block footer%}  
