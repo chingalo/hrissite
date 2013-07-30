@@ -1,0 +1,120 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+{% block style %}
+<style>
+*{
+margin:0px;
+paddig:0px;	
+}
+header,nav, footer, arcticle, footer, section{
+display: block;
+}
+body{
+width: 100%;
+display: -webkit-box;
+-webkit-box-pack:center;
+}
+#main_body{
+max-width: 1100px;
+margin: 15px;
+border: 1px solid;
+display:-webkit-box;
+-webkit-box-orient:vertical;
+-webkit-box-flex:1;	
+}
+.header{
+padding:10px;	
+background:#AD9898;
+display: -webkit-box;
+-webkit-box-orient:horizontal;
+}
+.header h3{
+padding-left: 10px;	
+font-style: italic;
+font-family: century schoolbook L;
+font-size: 40px;
+text-align: center;
+}
+img{
+padding-left: 10px;
+padding-right: 10px; 
+}
+.menu{
+border:	#BF9B9B;
+background:#4D4D4D;
+}
+.menu li{
+display: inline-block;
+list-style: none;
+font: bold 18px Tahoma;
+padding: 5px	
+}
+li a{
+text-decoration: none;
+color: #8E8080;
+}
+li a:hover{
+background:#BFBFBF;
+font-size: 20px;
+border-radius: 5px;
+padding: 2px;
+}
+</style>
+{% endblock %}
+{% block page_header %}
+	<div class="header">
+		<img width=200px height= 100px src="#">
+		<h3>{% placeholder head_of_page %}</h3>
+	</div>
+{% endblock %}
+{% block nav_bar %}
+	<li><a href="">TAB1</a></li>
+	<li><a href="">TAB2</a></li>
+	<li><a href="">TAB3</a></li>
+	<li><a href="">TAB4</a></li>
+	<li><a href="">TAB5</a></li>
+{% endblock %} 
+{% block contents %}
+	{% placeholder slide_show_and_others %}
+{% endblock %}
+
+{% block side_news %}
+<h2>NEWS</h2>
+{% placeholder aside_news %}
+{% endblock %}
+	
+{% block contents_others %}
+	<ul class="tabs_others_articles">
+		<li><a href="">TAB1</a></li>
+		<li><a href="">TAB2</a></li>
+		<li><a href="">TAB3</a></li>
+		<li><a href="">TAB4</a></li>
+		<li><a href="">TAB5</a></li>
+	</ul>
+{%placeholder others_articles_at_bottom%}
+{% endblock %}
+
+{% block footer%}  
+	<p> all right reserved</p>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
