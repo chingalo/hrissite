@@ -1,5 +1,30 @@
 
 <!DOCTYPE html>
 <html lang='en'>
+	<head>
+		<title>{% block title_of_page %}{% endblock %}</title>
+		<meta charset="utf-8">
 
+		<style>
+
+		</style>
+		{% block other_pages_style %}{% endblock %}
+	</head>
+	<body>
+		<div id="page">
+			<div>
+				<nav id='menu_navigation'>
+					<ul>
+					<li><a href="">home</a></li>
+					<li><a href="">mission and mission</a></li>
+					<li><a href=""></a>contact us</li>
+					<li><a href=""></a>about us</li>
+					</ul>
+				</nav>
+			</div>
+			<div id='contents'>
+				{% block contents_of_the_page %}{% endblock %}
+			</div>
+		</div>
+	</body>
 </html>	
