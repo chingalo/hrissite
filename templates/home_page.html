@@ -1,30 +1,109 @@
 {% extends "base.html" %}
 {% load cms_tags %}
-{% block title_of_page %}{% placeholder title_of_page %}{% endblock %}
 {% block other_pages_style %}
 <style>
-
+#slide_and_news{
+padding-top:10px;
+text-align:justify;
+}
+#slide{
+float:left;
+margin-left:20px;
+margin-right:10px;
+width:780px;
+background-color:;
+border:1px solid;
+border-radius:5px;
+}
+#slide div{
+padding:9px;
+}
+#news{
+float:left;
+background-color:;
+margin-right:20px;
+margin-left:10px;
+width:190px;
+border: 1px solid;
+}
+#news h4{
+font-size:;
+font-family:;
+color:;
+text-decoration:underline;
+font-style:italic;
+text-align:center;
+}
+#news p{
+border-bottom:1px solid;
+border-radius:2px;
+font-family:;
+font-style:;
+color:;
+padding-left:3px;;
+}
+#tabs_and_other_articles{
+clear:both;
+padding:20px;
+text-align:justify;
+display:block;
+}
+#tabs{
+font-size:20px;
+background:;
+color:;
+}
+#tabs ul li{
+float:left;
+display:inline-block;
+padding-top:5px;
+padding left:10px;
+padding-right:5px;
+border: 1px solid;
+border-radius:4px;
+margin-right:2px;
+height:30px;
+}
+#tabs ul li a{
+padding:10px;	
+text-decoration:none;
+}
+#tabs ul li a:hover{
+font-family:;
+color:;
+background-color:;
+font-size:25px;
+}
+#other_articles{
+clear:both;
+border:2px solid;
+padding:10px;
+width:760px;	
+}
 </style>
 {% endblock %}
 {% block contents_of_the_page %}
 <div id='slide_and_news'>
-<div id='slide'>
-{%placeholder slide_show %}
+	<div id='slide'>
+		<div>
+			{%placeholder slide_show %}
+		</div>
+	</div>
+		<div id='news'>
+			<h4>NEWS</h4>
+			<p>{% placeholder aside_news %}</p>
+		</div>	
 </div>
-<div id='news'>
-
-</div>
-</div>
-<div id='tabs_and_other_articles'>
-<div>
-<nav id='tabs'>
-	<ul>
-		<li><a href="">tabs1</a></li>
-		<li><a href="">tabs2</a></li>
-		<li><a href="">tabs3</a></li>
-		<li><a href="">tabs4</a></li>
-	</ul>
-</nav>
+	<div id='tabs_and_other_articles'>
+	<div>
+	<nav id='tabs'>
+		<ul>
+			<li><a href="">tabs1</a></li>
+			<li><a href="">tabs2</a></li>
+			<li><a href="">tabs3</a></li>
+			<li><a href="">tabs4</a></li>
+		</ul>
+	</nav>
 </div> 
 <div id='other_articles'>
 {% placeholder other_aarticles %}
