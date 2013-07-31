@@ -1,2 +1,33 @@
 {% extends "base.html" %}
 {% load cms_tags %}
+{% block title_of_page %}{% placeholder title_of_page %}{% endblock %}
+{% block other_pages_style %}
+<style>
+
+</style>
+{% endblock %}
+{% block contents_of_the_page %}
+<div id='slide_and_news'>
+<div id='slide'>
+{%placeholder slide_show %}
+</div>
+<div id='news'>
+
+</div>
+</div>
+<div id='tabs_and_other_articles'>
+<div>
+<nav id='tabs'>
+	<ul>
+		<li><a href=""></a></li>
+		<li><a href=""></a></li>
+		<li><a href=""></a></li>
+		<li><a href=""></a></li>
+	</ul>
+</nav>
+</div> 
+<div id='other_articles'>
+{% placeholder other_aarticles %}
+</div>
+</div>
+{% endblock %}
