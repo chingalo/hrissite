@@ -1,179 +1,20 @@
-{% extends "base.html" %}
 {% load cms_tags %}
-{% block style %}
+{% extends "base.html" %}
+{% block other_pages_style %}
 <style>
-*{
-margin:0px;
-paddig:0px;	
-}
-header,nav, footer, arcticle, footer, section{
-display: block;
-}
-body{
-background:;	
-width: 100%;
-display: -webkit-box;
--webkit-box-pack:center;
-}
-#main_body{
-max-width: 1100px;
-margin: 15px;
-border: ;
-display:-webkit-box;
--webkit-box-orient:vertical;
--webkit-box-flex:1;	
-}
-.header{
-padding:10px;	
-background:#63AEF7;
-display: -webkit-box;
--webkit-box-orient:horizontal;
--webkit-box-flex:1;
-}
-.header h3{
-padding-left: 10px;	
-font-style: italic;
-font-family: century schoolbook L;
-font-size: 40px;
-text-align: right;
-}
-img{
-padding-left: 10px;
-padding-right: 10px; 
-}
-.menu{
-border:	#BF9B9B;
-background:#4D4D4D;
-}
-.menu li{
-display: inline-block;
-list-style: none;
-font: bold 18px Tahoma;
-padding: 5p/
-}
-li a{
-text-decoration: none;
-color: #8E8080;
-}
-li a:hover{
-background:#BFBFBF;
-font-size: 19px;
-border-radius: 5px;
-padding: 5px;
-}
-#main_body{
-max-width: 1200px;
-margin: 10px 0px;
-display:-webkit-box;
--webkit-box-orient:vertical;
-}
-#mini_body{
-margin: 10px;
-display: -webkit-box;
--webkit-box-orient: horizontal;	
-}
-#main_contents{
-border: 2px solid black;
-margin: 5px;
-padding: 5px;
--webkit-box-flex: 1;
-}
-#aside_bar{
-border: 2px solid black;
-padding: 5px;	
-margin: 5px;	
-width:200px;
-}
-#aside_bar p{
-background:silver;
-border-radius: 2px;
-display:block}
-#others{
-padding-top: 5px;
-padding-left: 17px;
-padding-right: 17px;
-margin 10px;
-display:-webkit-box;
--webkit-box-orient: vertical;
-}
-.tabs_others_articles{
-background:#4D4D4D;
-}
-.tabs_others_articles li{
-display:inline-block;
-padding-left: 10px;
-padding-top: 10px;
-padding-bottom: 10px;
-}
-#others p{
-border: 2px solid black;
-padding: 5px;
-}
-#footer{
-background: #BFBFBF;
-border-top: 3px solid silver;
-}
-#footer p{
-text-align: center;
-padding: 5px;	
-margin: 15px;	
-}
+
 </style>
+{% endblock %
+{% block contents_of_the_page %}
+<div id='breadcrumbs'>
+
+</div>
+<div id='two_column'>
+<div id='left_column'>
+{% placeholder left_column %}
+</div>
+<div id='right_column'>
+{% placeholder right_column %}
+</div>
+</div>
 {% endblock %}
-{% block page_header %}
-	<div class="header">
-		<img width=200px height= 100px src="">
-		<h3>{% placeholder head_of_page %}</h3>
-	</div>
-{% endblock %}
-{% block nav_bar %}
-	<li><a href="">TAB1</a></li>
-	<li><a href="">TAB2</a></li>
-	<li><a href="">TAB3</a></li>
-	<li><a href="">TAB4</a></li>
-	<li><a href="">TAB5</a></li>
-{% endblock %} 
-{% block contents %}
-	{% placeholder slide_show_and_others %}
-{% endblock %}
-
-{% block side_news %}
-<h2>NEWS</h2>
-<p>{% placeholder aside_news %}</p>
-{% endblock %}
-	
-{% block contents_others %}
-	<ul class="tabs_others_articles">
-		<li><a href="">TAB1</a></li>
-		<li><a href="">TAB2</a></li>
-		<li><a href="">TAB3</a></li>
-		<li><a href="">TAB4</a></li>
-		<li><a href="">TAB5</a></li>
-	</ul>
-<p>{%placeholder others_articles_at_bottom%}</p>
-{% endblock %}
-
-{% block footer%}  
-	<p> all right reserved</p>
-{% endblock %}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
