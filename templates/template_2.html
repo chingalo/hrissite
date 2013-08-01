@@ -1,6 +1,23 @@
 {% extends "base.html" %}
 {% load cms_tags %}
+{% block other_pages_style %}
+<style>
 
-{% block base_content %}
-  {% placeholder template_2_content %}
+</style>
+{% endblock %}
+{% block contents_of_the_page %}
+<div id='breadcrumbs'>
+
+</div>
+<div id='three_columns'>
+<div id='left_column'>
+{% placeholder left_column %}
+</div>
+<div id='central_column'>
+{% placeholder central_column %}
+</div>
+<div id='right_column'>
+{% placeholder right_column %}
+</div>
+</div>
 {% endblock %}
