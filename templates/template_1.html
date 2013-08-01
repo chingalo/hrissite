@@ -1,5 +1,20 @@
 {% extends "base.html" %}
 {% load cms_tags %}
-{% block base_content %}
-  {% placeholder template_1_content %}
+{% block other_pages_style %}
+<style>
+
+</style>
+{% endblock %}
+{% block contents_of_the_page %}
+<div id='breadcrumbs'>
+
+</div>
+<div id='two_row'>
+<div id='first_row'>
+{% placeholder first_row %}
+</div>
+<div id='second_row'>
+{% placeholder second_row %}
+</div>
+</div>
 {% endblock %}

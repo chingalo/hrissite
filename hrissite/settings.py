@@ -137,10 +137,10 @@ LANGUAGES = [
     ('en', 'English'),
 ]
 
-CMS_TEMPLATES = (
-    
+CMS_TEMPLATES = (    
     ('home_page.html', gettext('home page temp')),
-    ('home_page2.html', gettext('two column temp')),
+    ('home_page2.html', gettext('two columns temp')),
+    ('template_1.html', gettext('two rows temp')),
 )
 #SITE_ID:
 CMS_LANGUAGES = {
