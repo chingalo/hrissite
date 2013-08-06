@@ -1,58 +1,12 @@
 {% load sekizai_tags i18n cms_tags menu_tags %}
+
+{% load staticfiles %}
 <!DOCTYPE html>
 <html lang='en'>
 	<head>		
 		<meta charset="utf-8">
 		<title>{% page_attribute page_title %}</title>
-		<style>
-			*{
-			margin:0px;
-			padding:0px;
-			}
-			body{
-			text-align: center;
-			background-color:silver;
-			}		
-			#page{
-			width:1100px;
-			border: 1px solid silver;
-			border-radius:10px;
-			margin:20px auto;
-			background-color:;
-			}
-			#menu_navigation{
-			background-color:#1C7A26;
-			border-bottom: 2px solid #1C7A26;	
-			height:50px;
-			}
-			#menus li{
-			float: left;
-			padding-left: 10px;
-			padding-right:5px;	
-			margin-top: 15px;	
-			display:inline-block;
-			border-right:2px solid;
-			}
-			#menus li a{				
-			font-size:20px;
-			font-family:;	
-			text-decoration:none;
-			}
-			#menus li a:hover{
-			background-color:#4F9B57;
-			border-bottom:4px solid;
-			font-size:23px;
-			}
-			#contents{
-			margin-top:10px;
-			margin-left:30px;
-			margin-right:30px;
-			margin-bottom:5px;
-			border:1px solid #67BE70;
-			border-radius:10px;
-			background:#67BE70;
-			}
-		</style>
+		<link rel="stylesheet" type="text/css" href={{ MEDIA_URL }}css/base.css media="all">
 		{% block other_pages_style %}{% endblock %}
 	</head>
 	<body>
