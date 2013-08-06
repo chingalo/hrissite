@@ -2,15 +2,57 @@
 {% load staticfiles %}
 <!DOCTYPE html>
 <html lang='en'>
-<head>
-<title>{% page_attribute page_title %}</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--styles files-->
-<link rel="stylesheet" media='screen' href="{{MEDIA_ulr}}css/bootstrap.css" >
-<link rel="stylesheet" media='screen' href="{{MEDIA_ulr}}css/bootstrap-responsive.css" >
-</head>
-<body>
-<!--body of base template-->
-</body>
+	<head>
+		<title >{% page_attribute page_title %}</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--styles files-->
+		<link rel="stylesheet" media='screen' href="{{MEDIA_URL}}css/bootstrap.css" >
+		<link rel="stylesheet" media='screen' href="{{MEDIA_URL}}css/bootstrap-responsive.css" >
+		<style>
+		body{
+		marigin-top:50px;	
+		}
+		</style>
+	</head>
+	
+	<body>
+		<!--body of base template-->
+		<!-- navigation bar-->
+		<div class ="navbar navbar-static-top" >
+			<div class = "navbar-inner" >
+				<div class ='container'>
+					<ul class = 'nav'>
+						<li class=""><a href="" >HOME</a></li>
+						<li><a href="" >MISSON AND VISION </a></li>
+						<li><a href="" >CONTACT US</a></li>
+						<li><a href="" >ABOUT US</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div style="margin-top:10px">
+		<!--contents from other templates-->	
+		<div class ='container-fluid' >
+			{% block contents %}{% endblock %}
+		</div>
+		</div>
+		<!--footer-->
+		<div class='container-fluid'>
+		<footer style="border-top:2px solid #BFBFBF;">
+		<div class='row-fluid'>
+		<div class='span4'>
+		<!--first column at footer-->
+		</div>
+		<div class='span4'>
+		<!--second column at footer-->
+		</div>
+		<div class='span4'>
+		<!--third column at footer-->
+		</div>
+		<p align=center> &copy;2013 all rights reserved</p>
+		</div>
+		</div>
+		</footer>
+	</body>
 </html>
