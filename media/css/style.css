@@ -54,8 +54,13 @@ height:250px;
 .tabs_with_arcticles{
 padding:20px;
 }	
-
-
+/*additional syles for breadcrumbs*/
+#breadcrumb-custom{
+margin: 5px auto;
+}
+#columns{
+margin:2px auto;
+}
 
 
 
