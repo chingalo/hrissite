@@ -211,6 +211,24 @@ CMS_PLACEHOLDER_CONF = {
 'TextPlugin':1,
 }
 },
+'article_tab_1':{
+"plugins":['TextPlugin'],
+'limits':{
+'TextPlugin':1,
+}
+},
+'article_tab_2':{
+"plugins":['TextPlugin'],
+'limits':{
+'TextPlugin':1,
+}
+},
+'article_tab_3':{
+"plugins":['TextPlugin'],
+'limits':{
+'TextPlugin':1,
+}
+},
 }
 
 #enable CMS_SOFTROOT
