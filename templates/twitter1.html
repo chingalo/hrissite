@@ -2,30 +2,25 @@
 {% load cms_tags %}
 {% block contents %}
 <!--slide shows and news-->
-<div class='row-fluid'>
-<div class='span1'>
-<!-- not yet-->
-</div>	
-<div class='span8'>
+<div class='row-fluids' id='slide_and_news'>
+
+<div class='span9'>
 <!--slide show-->
 <div id="myCarousel" class="carousel slide"> 
 <!--items for slide show-->
-<div id='slide' class ='carousel-inner' >
-	
+<div id='slide' class ='carousel-inner' >		
 <div class='item '>
 <img src="{{MEDIA_URL}}img/1.jpg"  alt>
-
 </div>
-
+<!--end item-->
 <div  class='item'>
 <img src="{{MEDIA_URL}}img/2.jpg"  alt>
-
 </div>
-
+<!--end item-->
 <div class='item active'>
 <img src="{{MEDIA_URL}}img/3.png"  alt>
-
 </div>
+<!--end item-->
 </div>
 <!--direction on slide show-->
 <a class="carousel-control right" href="#myCarousel" data-slide="next">›</a>
@@ -33,8 +28,12 @@
 </div>
 </div>
 </div>
-<div class='span3'>
+<div class='span3' style="text-align:justify; padding-left:20px;" >
 <!--news-->
+<div id='news'>
+<h4>NEWS</h4>
+{% placeholder news %}
+</div>	
 </div>
 </div>
 {% endblock %}

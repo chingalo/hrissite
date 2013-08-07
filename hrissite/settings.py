@@ -185,6 +185,17 @@ CMS_LANGUAGES = {
 
 SITE_ID=1
 
+#customization on django cms placeholder
+CMS_PLACEHOLDER_CONF = {
+'news':{
+"plugins": ['LinkPlugin'],
+'limits':{
+'LinkPlugin': 10,
+}
+}
+
+}
+
 #enable CMS_SOFTROOT
 CMS_SOFTROOT = True
 

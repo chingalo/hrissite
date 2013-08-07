@@ -1,0 +1,37 @@
+body{
+marigin:;	
+}
+#slide_and_news{
+padding-top:10px;
+}
+#slide img{
+height:370px;
+width:850px;
+margin-left:13px;
+border:1px solid black;
+border-radius:10px;
+}
+#news{
+padding:6px;	
+border-radius:10px;
+border:1px solid;
+}		
+#news h4{
+font-size:;
+font-family:;
+color:;
+text-decoration:;
+font-style:bold;
+text-align:center;
+border-bottom:1px solid #BFBFBF;
+border-radius:2px;
+}
+#news a{
+display:block;
+border-bottom:1px solid;
+border-radius:2px;
+font-family:;
+font-style:;
+color:;
+text-align:justify;		
+}		
