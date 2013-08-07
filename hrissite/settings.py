@@ -192,8 +192,25 @@ CMS_PLACEHOLDER_CONF = {
 'limits':{
 'LinkPlugin': 10,
 }
+},
+'article_1':{
+"plugins":['TextPlugin'],
+'limits':{
+'TextPlugin':1,
 }
-
+},
+'article_2':{
+"plugins":['TextPlugin'],
+'limits':{
+'TextPlugin':1,
+}
+},
+'article_3':{
+"plugins":['TextPlugin'],
+'limits':{
+'TextPlugin':1,
+}
+},
 }
 
 #enable CMS_SOFTROOT
