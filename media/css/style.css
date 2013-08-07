@@ -1,6 +1,4 @@
-body{
-marigin:;	
-}
+/* Additional style for slides and a side news */
 #slide_and_news{
 padding-top:10px;
 }
@@ -34,4 +32,13 @@ font-family:;
 font-style:;
 color:;
 text-align:justify;		
+}
+/* Additional syles for articles and tabs on twitter.html */
+.all_articles{
+border:1px solid;
+margin: 20px;
+border-radius:10px;
+}
+.tabs_with_arcticles{
+padding:20px;
 }		
