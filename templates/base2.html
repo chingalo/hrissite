@@ -9,32 +9,35 @@
 		<!--styles files-->
 		<link rel="stylesheet" media='screen' href="{{MEDIA_URL}}css/bootstrap.css" >
 		<link rel="stylesheet" media='screen' href="{{MEDIA_URL}}css/bootstrap-responsive.css" >
+		<link rel="stylesheet" media='screen' href="{{MEDIA_URL}}css/docs.css" >
+		<link rel="stylesheet" media='screen' href="{{MEDIA_URL}}css/prettify.css" >
 		<style>
 		body{
-		marigin-top:50px;	
+		marigin-top:100px;	
 		}
 		#slide img{
-		height:300px;
-		width:683px;
+		height:370px;
+		width:792px;
 		text-align:right;
-		margin-left:18px;
+		margin-left:17px;
 		border:1px solid black;
 		border-radius:10px;
-		}		
+		}
+				
 		</style>
 	</head>
 	
 	<body>
 		<!--body of base template-->
 		<!-- navigation bar-->
-		<div class ="navbar navbar-static-top" >
+		<div class ="navbar navbar-static-top navbar-inverse" >
 			<div class = "navbar-inner" >
 				<div class ='container'>
 					<ul class = 'nav'>
-						<li class=""><a href="" >HOME</a></li>
-						<li><a href="" >MISSON AND VISION </a></li>
-						<li><a href="" >CONTACT US</a></li>
-						<li><a href="" >ABOUT US</a></li>
+						<li class="divider-vertical"><a href="" >HOME</a></li>
+						<li class=""><a href="" >MISSON AND VISION </a></li>
+						<li class="divider-vertical"><a href="" >CONTACT US</a></li>
+						<li class="d"><a href="" >ABOUT US</a></li>
 					</ul>
 				</div>
 			</div>
@@ -81,6 +84,11 @@
         })
       }(window.jQuery)
     </script>
+    <script src="{{ MEDIA_URL }}js/bootstrap-affix.js"></script>
     <script src="{{ MEDIA_URL }}js/holder.js"></script>
+    <script src="{{ MEDIA_URL }}js/bootstrap-affix.js"></script>
+    <script src="{{ MEDIA_URL }}js/prettify.js"></script>
+    <script src="{{ MEDIA_URL }}js/application.js"></script>
+    
 		</body>
 </html>
