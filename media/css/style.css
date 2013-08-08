@@ -46,6 +46,7 @@ text-align:justify;
 }
 /* Additional syles for articles and tabs on twitter.html */
 .all_articles{
+background-color:#BFBFBF;
 border:1px solid;
 margin: 20px;
 border-radius:10px;
@@ -61,7 +62,23 @@ margin: 5px auto;
 #columns{
 margin:2px auto;
 }
-
+.around_two_column{
+border:1px solid;
+border-radius:10px;
+margin:10px;
+}
+.left{
+border:1px solid;
+padding: 10px;
+border-radius:10px;
+margin:5px;
+}
+.right{
+border:1px solid;
+padding: 10px;
+border-radius:10px;
+margin:5px;
+}
 
 
 
