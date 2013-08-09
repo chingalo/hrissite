@@ -84,6 +84,33 @@ margin:5px;
 min-height:200px;
 }
 /* additional style for twitter3.html*/
+#outer-row{
+display:-webkit-box;
+-webkit-box-pack:center;
+
+}
+#rows{
+max-width:1248px;
+min-width:1225px;
+display:-webkit-box;
+-webkit-box-orient:vertical;
+min-height:250px;
+margin-bottom:10px;
+padding:10px;
+}
+#row1{
+border:1px solid;
+border-radius:5px;
+margin:10px auto;
+min-height:200px;
+}
+#row2{
+border:1px solid;
+border-radius:5px;
+margin:10px auto;
+min-height:200px;
+}
+
 
 
 
