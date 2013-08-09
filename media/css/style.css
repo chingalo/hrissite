@@ -23,7 +23,8 @@ border-radius:10px;
 #news{
 padding:6px;	
 border-radius:10px;
-border:1px solid;
+border:;
+background-color:#f5f5f5;
 }		
 #news h4{
 font-size:;
@@ -46,8 +47,8 @@ text-align:justify;
 }
 /* Additional syles for articles and tabs on twitter.html */
 .all_articles{
-background-color:#BFBFBF;
-border:1px solid;
+background-color:#f5f5f5;
+border:;
 margin: 20px;
 border-radius:10px;
 height:250px;
@@ -64,20 +65,21 @@ margin:2px auto;
 }
 /*additional styles for twitter2.html*/
 .around_two_column{
-border:1px solid;
+background-color:#f5f5f5;
+border:;
 border-radius:10px;
 margin:10px;
 padding:10px;
 }
 #left{
-border:1px solid;
+border:2px solid white;
 padding: 10px;
 border-radius:10px;
 margin:5px;
 min-height:200px;
 }
 #right{
-border:1px solid;
+border:2px solid white;
 padding: 10px;
 border-radius:10px;
 margin:5px;
@@ -85,32 +87,34 @@ min-height:200px;
 }
 /* additional style for twitter3.html*/
 #outer-row{
+background-color:#f5f5f5;
+border-radius:4px;
 display:-webkit-box;
 -webkit-box-pack:center;
-
 }
 #rows{
 max-width:1248px;
 min-width:1225px;
 display:-webkit-box;
 -webkit-box-orient:vertical;
-min-height:250px;
 margin-bottom:10px;
 padding:10px;
 }
 #row1{
-border:1px solid;
+border:2px solid white;
 border-radius:5px;
 margin:10px auto;
 min-height:200px;
+padding:15px;
 }
 #row2{
-border:1px solid;
+border:2px solid white;
 border-radius:5px;
 margin:10px auto;
 min-height:200px;
+padding:15px;
 }
-
+/* additional style for twitter4.html*/
 
 
 
