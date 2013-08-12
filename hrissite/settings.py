@@ -138,15 +138,15 @@ LANGUAGES = [
 ]
 
 CMS_TEMPLATES = ( 
-	('twitter4.html', gettext('three column template by bootstrap')),
+	('twitter1.html', gettext('home page template by bootstrap')),
+	('twitter2.html', gettext('two column template by bootstrap')),
 	('twitter3.html', gettext('two rows template by bootstrap')),
+	('twitter4.html', gettext('three column template by bootstrap')),
     ('home_page.html', gettext('home page temp')),
     ('home_page2.html', gettext('two columns temp')),
     ('template_1.html', gettext('two rows temp')),
     ('template_2.html', gettext('three columns temp')),
-    ('twitter1.html', gettext('home page template by bootstrap')),
-     ('twitter2.html', gettext('two column template by bootstrap')),
-     
+              
    )
 #SITE_ID:
 CMS_LANGUAGES = {
