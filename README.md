@@ -56,6 +56,6 @@ database configurations should look something similar to this:
 	EMAIL_SENDER = 'companyname@gmail.com'
 	EMAIL_SSL = True
 Initial dummy database settings are stored under data branch.
-After configuration run the server. Incase of any difficulties
+After configuration sync database( run command: python manage.py syncdb --all) and then run the server. Incase of any difficulties
 in configuration refer to [Django CMS Documentation](http://django-cms.readthedocs.org/en/2.2/getting_started/installation.html)
 for more information.
