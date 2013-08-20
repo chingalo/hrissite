@@ -99,12 +99,12 @@ WSGI_APPLICATION = 'hrissite.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'hrissite',
-        'HOST': 'localhost',
-        'PASSWORD':'chingy',
-        'PORT':'5432',
-        'USER':'chingy',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'dev.sqlite3',
+        'HOST': '',
+        'PASSWORD':'',
+        'PORT':'',
+        'USER':'',
          
     }
 }

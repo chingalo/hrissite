@@ -17,17 +17,10 @@
 	<body>
 		<!--body of base template-->
 		<!-- navigation bar-->
-		<div class ="navbar navbar-static-top " >
-			<div class = "navbar-inner" >
-				<div class ='container'>
-					<ul class = 'nav'>
-						<li class="divider-vertical"><a href="" >HOME</a></li>
-						<li class=""><a href="" >MISSON AND VISION </a></li>
-						<li class="divider-vertical"><a href="" >CONTACT US</a></li>
-						<li class="d"><a href="" >ABOUT US</a></li>
-					</ul>
-				</div>
-			</div>
+		{% show_menu 0 100 100 100 "navigation.html" %}
+		
+		<div>
+		{% show_breadcrumb %}
 		</div>
 		<div style="margin-top:10px">
 		<!--contents from other templates-->	

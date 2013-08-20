@@ -1,7 +1,7 @@
 *.pyc
 deps.txt~
 README.md~
-
+dev.sqlite3
 
 
 
