@@ -99,12 +99,12 @@ WSGI_APPLICATION = 'hrissite.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'dev.sqlite3',
-        'HOST': '',
-        'PASSWORD':'',
-        'PORT':'',
-        'USER':'',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'hrissite',
+        'HOST': 'localhost',
+        'PASSWORD':'chingy',
+        'PORT':'5432',
+        'USER':'chingy',
          
     }
 }
@@ -142,10 +142,7 @@ CMS_TEMPLATES = (
 	('twitter2.html', gettext('two column template by bootstrap')),
 	('twitter3.html', gettext('two rows template by bootstrap')),
 	('twitter4.html', gettext('three column template by bootstrap')),
-    ('home_page.html', gettext('home page temp')),
-    ('home_page2.html', gettext('two columns temp')),
-    ('template_1.html', gettext('two rows temp')),
-    ('template_2.html', gettext('three columns temp')),
+   
               
    )
 #SITE_ID:
@@ -233,13 +230,23 @@ CMS_PLACEHOLDER_CONF = {
 'TextPlugin':1,
 }
 },
+'main-contents':{
+"plugins":['TextPlugin'],
+'limits':{
+'TextPlugin':1,
+}
+},
 }
 
 #enable CMS_SOFTROOT
 CMS_SOFTROOT = True
-
 MEDIA_ROOT = os.path.join(PROJECT_PATH, "media")
 MEDIA_URL = "/media/"
 
-STATIC_ROOT = os.path.join(PROJECT_PATH, "static")
-STATIC_URL = "/static/"
+
+STATIC_ROOT = 'staticfiles'
+STATIC_URL = '/static/'
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)

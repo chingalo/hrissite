@@ -10,7 +10,7 @@
  * /
 /* Additional style for slides and a side news */
 body{
-background-color:#ADD8E6;
+background-color:;
 }
 
 #slide_and_news{
@@ -22,6 +22,9 @@ width:850px;
 margin-left:11px;
 border:1px solid black;
 border-radius:10px;
+}
+.main-contents{
+
 }
 #news{
 padding:6px;	
@@ -62,6 +65,7 @@ padding:20px;
 /*additional syles for breadcrumbs*/
 #breadcrumb-custom{
 margin: 5px auto;
+width:95%;
 }
 #columns{
 margin:2px auto;

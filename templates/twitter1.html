@@ -1,5 +1,5 @@
 {% extends "base2.html" %}
-{% load cms_tags %}
+{% load cms_tags menu_tags %}
 {% block contents %}
 <!--slide shows and news-->
 <div class='row-fluids' id='slide_and_news'>
@@ -21,10 +21,11 @@
 				</div>
 				<!--end item-->
 				</div>
-				<!--direction on slide show-->
-				<a class="carousel-control right" href="#myCarousel" data-slide="next">›</a>
-				<a class="carousel-control left" href="#myCarousel" data-slide="prev">‹</a>  
 			</div>
+		</div>
+		<!--main contents-->
+		<div class='main-contents'>
+		{% placeholder main-contents %}
 		</div>
 	</div>
 	<div class='span3' style="text-align:justify; padding-left:20px;" >

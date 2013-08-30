@@ -1,13 +1,7 @@
 {% load sekizai_tags i18n cms_tags menu_tags %}
 {% load staticfiles %}
 
-<div class ="navbar navbar-static-top " >
-	<div class = "navbar-inner" >
-		<div class ='container'>
-			<ul class = 'nav'>
-				
-				<ul class="nav"> 
-					{% for child in children %}
+{% for child in children %}
 					<li class="
 					{% if child.selected %}active{% endif %}
 					{% if child.ancestor %}ancestor{% endif %}
@@ -31,19 +25,6 @@
 				
 					</li>
 					{% endfor %}
-				 </ul>
-				
-				
-				
-				
-				
-<!--
-				<li class="divider-vertical"><a href="" >HOME</a></li>
-				<li class=""><a href="" >MISSON AND VISION </a></li>
-				<li class="divider-vertical"><a href="" >CONTACT US</a></li>
-				<li class="d"><a href="" >ABOUT US</a></li>
--->
-			</ul>
-		</div>
+			</div>
 	</div>
 </div>
