@@ -8,11 +8,10 @@
  * 
  * ==================================
  * /
-/* Additional style for slides and a side news */
+*/
 body{
-background-color:#ADD8E6;
+background:#ADD8E6;
 }
-
 #slide_and_news{
 padding-top:10px;
 }
@@ -55,12 +54,15 @@ text-align:justify;
 }
 /* Additional syles for articles and tabs on twitter.html */
 #main-contents{
-max-width:65%;
+max-width:60%;
 margin-left:56px;
 background:#f5f5f5;
-padding:10px;
+padding-top:20px;
+padding-bottom:20px;
+padding-left:80px;
 border-radius:10px;
 margin-bottom:20px;
+text-align:justify;
 }
 .all_articles{
 background-color:#f5f5f5;

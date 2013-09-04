@@ -8,27 +8,43 @@
 		<div id="myCarousel" class="carousel slide"> 
 			<!--items for slide show-->
 			<div id='slide' class ='carousel-inner' >		
-				<div class='item ' >
-					<img src="{{MEDIA_URL}}img/1.jpg"  alt>
+				<div class='item active' >
+					<img src="{{MEDIA_URL}}img/hrhis_operational_training.jpg" alt="Participatory HRHIS Operational Training" >
 					<div class="carousel-caption" id='contents_of_img'>
-                      <h4>Second Thumbnail label</h4>
-                      <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                      <h4>Participatory HRHIS Operational Training</h4>
+                      <p>HRHIS Operational Training in Mtwara Region, Health Officer/Participant demonstrating data entry after training.</p>
                     </div>
 				</div>
 				<!--end item-->
-				<div  class='item' >
-					<img  src="{{MEDIA_URL}}img/2.jpg"  alt>
+				<div class='item ' >
+					<img src="{{MEDIA_URL}}img/hrhis_deployment.jpg" alt="HRHIS Software Deployment"  >
+					<div class="carousel-caption" id='contents_of_img'>
+                      <h4>HRHIS Software Deployment</h4>
+                      <p>HRHIS Software deployment for Lindi Municipal council, done immediately after operational training.</p>
+                    </div>
+				</div>
+				<!--end item-->
+				<div class='item ' >
+					<img src="{{MEDIA_URL}}img/aggregate_report_age_distribution.jpg" alt="Age Distribution aggregate report"  >
+					<div class="carousel-caption" id='contents_of_img'>
+                      <h4>Age Distribution aggregate report</h4>
+                      <p>Age distribution aggregate report sample from HRHIS Software generated from reports module.</p>
+                    </div>
+				</div>
+				<!--end item-->
+			<div class='item ' >
+					<img src="{{MEDIA_URL}}img/data_entry_fields.jpg" alt=""  >
 					<div class="carousel-caption" id='contents_of_img'>
                       <h4> </h4>
-                      <p> </p>
+                      <p>Public Employee Data Entry form port from HRHIS Software. Form used to collect Human resource information of government employees.</p>
                     </div>
 				</div>
 				<!--end item-->
-				<div class='item active' >
-					<img src="{{MEDIA_URL}}img/3.png"  alt>
+				<div class='item ' >
+					<img src="{{MEDIA_URL}}img/update_records_screen.jpg" alt="Update Records Page"  >
 					<div class="carousel-caption" id='contents_of_img'>
-                      <h4>Second Thumbnail label</h4>
-                      <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                      <h4>Update Records Page</h4>
+                      <p>HRHIS Update records page, page for viewing, updating and entering history and in service training information of employees.</p>
                     </div>
 				</div>
 				<!--end item-->
@@ -42,13 +58,13 @@
 	<div class='span3' style="text-align:justify; padding-left:20px;" >
 		<!--news-->
 		<div id='news'>
-			<h4>NEWS</h4>
-			{% placeholder news or %} not yet added {% endplaceholder  %}
+			<h4>HRHIS Internals</h4>
+			{% placeholder hrhis_internals or %} not yet added {% endplaceholder  %}
 		</div>
 		<!--news-->
 		<div id='news'>
-			<h4>posts</h4>
-			{% placeholder post or %} not yet added {% endplaceholder  %}
+			<h4>Recent posts</h4>
+			{% placeholder recent_post or %} not yet added {% endplaceholder  %}
 		</div>	
 	</div>
 </div>
