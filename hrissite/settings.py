@@ -139,10 +139,11 @@ LANGUAGES = [
 
 CMS_TEMPLATES = ( 
 	('twitter1.html', gettext('home page template by bootstrap')),
+	('twitter5.html', gettext('other pages template by bootstrap')),
+	('twitter6.html', gettext('downloads template by bootstrap')),
 	('twitter2.html', gettext('two column template by bootstrap')),
 	('twitter3.html', gettext('two rows template by bootstrap')),
-	('twitter4.html', gettext('three column template by bootstrap')),
-   
+	('twitter4.html', gettext('three column template by bootstrap')),  
               
    )
 #SITE_ID:
@@ -233,7 +234,7 @@ CMS_PLACEHOLDER_CONF = {
 'main-contents':{
 "plugins":['TextPlugin'],
 'limits':{
-'TextPlugin':1,
+'TextPlugin':10,
 }
 },
 }

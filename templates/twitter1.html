@@ -8,61 +8,56 @@
 		<div id="myCarousel" class="carousel slide"> 
 			<!--items for slide show-->
 			<div id='slide' class ='carousel-inner' >		
-				<div class='item '>
+				<div class='item ' >
 					<img src="{{MEDIA_URL}}img/1.jpg"  alt>
+					<div class="carousel-caption" id='contents_of_img'>
+                      <h4>Second Thumbnail label</h4>
+                      <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    </div>
 				</div>
 				<!--end item-->
-				<div  class='item'>
-					<img src="{{MEDIA_URL}}img/2.jpg"  alt>
+				<div  class='item' >
+					<img  src="{{MEDIA_URL}}img/2.jpg"  alt>
+					<div class="carousel-caption" id='contents_of_img'>
+                      <h4> </h4>
+                      <p> </p>
+                    </div>
 				</div>
 				<!--end item-->
-				<div class='item active'>
+				<div class='item active' >
 					<img src="{{MEDIA_URL}}img/3.png"  alt>
+					<div class="carousel-caption" id='contents_of_img'>
+                      <h4>Second Thumbnail label</h4>
+                      <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    </div>
 				</div>
 				<!--end item-->
 				</div>
+				<a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
 			</div>
 		</div>
-		<!--main contents-->
-		<div class='main-contents'>
-		{% placeholder main-contents %}
-		</div>
+		
 	</div>
 	<div class='span3' style="text-align:justify; padding-left:20px;" >
 		<!--news-->
 		<div id='news'>
 			<h4>NEWS</h4>
 			{% placeholder news or %} not yet added {% endplaceholder  %}
+		</div>
+		<!--news-->
+		<div id='news'>
+			<h4>posts</h4>
+			{% placeholder post or %} not yet added {% endplaceholder  %}
 		</div>	
 	</div>
 </div>
-	<!--tabs with articles-->
-<div class="all_articles">
-	<div class="tabs_with_arcticles">
-		<div class="tabbable">
-			<!--tabs for different articles-->
-			<ul class ="nav nav-tabs">
-				<li class="active"> <a href="#tab1" data-toggle='tab'>{% placeholder article_tab_1  or %} not yet added {% endplaceholder  %}</a></li>
-				<li > <a href="#tab2" data-toggle='tab'>{% placeholder article_tab_2 or %} not yet added {% endplaceholder  %}</a></li>
-				<li > <a href="#tab3" data-toggle='tab'>{% placeholder article_tab_3 or %} not yet added {% endplaceholder  %}</a></li>
-			</ul>
-			<!--contents for each tab-->
-			<div class="tab-content">  
-				<div class="tab-pane active" id="tab1">  
-					<!--content for tab 1-->
-					{% placeholder article_1 or %}not yet added{% endplaceholder  %}  
-				</div>  
-				<div class="tab-pane" id="tab2">  
-					<!--content for tab 1--> 
-					{% placeholder article_2 or %} not yet added {% endplaceholder  %}  
-				</div>  
-				<div class="tab-pane" id="tab3">  
-					<!--content for tab 1--> 
-					{% placeholder article_3 or %} not yet added {% endplaceholder  %} 
-			</div>  
-		</div>	
-	</div>
-</div>
+<!--main contents-->
+		<div class='row-fluid' id='main-contents'>
+		<div class = 'span9'>{% placeholder main-contents %}</div>	
+	
+		</div>
+
 {% endblock %}
 
 

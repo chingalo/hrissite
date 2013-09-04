@@ -10,23 +10,25 @@
  * /
 /* Additional style for slides and a side news */
 body{
-background-color:;
+background-color:#ADD8E6;
 }
 
 #slide_and_news{
 padding-top:10px;
 }
+#contents_of_img{
+width:820px;
+margin-left:11px;
+}
 #slide img{
-height:370px;
+height:400px;
 width:850px;
 margin-left:11px;
-border:1px solid black;
 border-radius:10px;
-}
-.main-contents{
-
+background-color:white;
 }
 #news{
+margin-bottom:5px;
 padding:6px;	
 border-radius:10px;
 border:;
@@ -52,10 +54,18 @@ color:;
 text-align:justify;		
 }
 /* Additional syles for articles and tabs on twitter.html */
+#main-contents{
+max-width:65%;
+margin-left:56px;
+background:#f5f5f5;
+padding:10px;
+border-radius:10px;
+margin-bottom:20px;
+}
 .all_articles{
 background-color:#f5f5f5;
-border:;
-margin: 20px;
+max-width:90%;
+margin:10px auto;
 border-radius:10px;
 height:250px;
 }
@@ -65,7 +75,6 @@ padding:20px;
 /*additional syles for breadcrumbs*/
 #breadcrumb-custom{
 margin: 5px auto;
-width:95%;
 }
 #columns{
 margin:2px auto;
@@ -141,5 +150,13 @@ border-radius:5px;
 margin:10px;
 min-height:280px;
 }
-
+/* additional style for twitter5.html*/
+.contents_for_other_page{
+background-color:#f5f5f5;
+max-width:85%;
+margin:20px auto;
+border-radius:10px;
+height:250px;
+padding:20px;
+}
 
